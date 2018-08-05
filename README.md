@@ -5,4 +5,4 @@
 ## List of notebooks
 
 - [OAuth2](./oauth2/oauth2.md)
-- [How to write a readme file for your github project](./markdown/readme-template.md)
+- [Tips and tools to write your readme file](./markdown/readme-template.md)
