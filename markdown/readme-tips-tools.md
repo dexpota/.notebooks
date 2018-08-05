@@ -16,12 +16,23 @@ or URL, insert any data inside your markdow or generate the table of contents.
 
 - [markdown-magic](https://github.com/DavidWells/markdown-magic);
 
-## References
+Sometimes is useful to show how to use your project through some videos or
+gifs. Here some tools to help you with that:
 
-- A [template](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46) by
-  fvcproductions;
+- [ttystudio](https://github.com/chjj/ttystudio);
+
+Badges are a nice way to quickly communicate to the user the status of your
+project. Here some tools you might find useful:
+
+- [badgerbadgerbadger](https://github.com/badges/badgerbadgerbadger);
 
 ## Examples
 > Some examples of nice readme files.
 
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md)
+
+## References
+
+- A [template](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46) by
+  fvcproductions;
+
