@@ -2,6 +2,13 @@
 
 ![Readme structure](./readme-structure.png)
 
+- **Badges** are a nice way to quickly show the status of your project: build
+  status, issues, coverege, license, and others;
+
+- Some nice **Graphics** is essential to rapidly communicate to the user what your project is about;
+
+- A **Table of contents** is necessary if your readme file is long;
+
 ## Tools
 
 Github flavored markdown currently miss an important feature, the automatic
@@ -33,6 +40,6 @@ project. Here some tools you might find useful:
 
 ## References
 
-- A [template](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46) by
+- [template](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46) by
   fvcproductions;
 
