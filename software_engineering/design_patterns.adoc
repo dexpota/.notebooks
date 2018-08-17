@@ -1,0 +1,5 @@
+ifdef::env-github[image::strategy.png[Strategy pattern]]
+ifndef::env-github[]
+plantuml::strategy.uml[strategy, png]
+endif:[]
+
