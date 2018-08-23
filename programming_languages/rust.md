@@ -37,8 +37,43 @@ let u = s; // Error! Use of moved value 's'
 In a more complex control flow how does rust decide if a value is still
 uninitialized? The general principle is that, if it’s possible for a variable
 to have had its value moved away, and it hasn’t definitely been given a new
-value since, it’s considered uninitialized. 
+value since, it’s considered uninitialized.
 
+```rust
+let x = vec![10, 20, 30];
+
+if c {
+  f(x)
+}
+
+h(x) // Error! x is considered uninitialized.
+``` 
+
+```rust
+let x = vec![10, 20, 30];
+while f() {
+  g(x); // Error! x would be moved in first iteration and uninitialized in the
+        // others
+}
+```
+
+What happens when we try to move the content of a structure like a vector? Trying to move the content of a vector inside another variable is not permitted in Rust, this is why the following example won't compile.
+
+```rust
+let x = vec!["Hello".to_string(), "World!".to_string()];
+let first = x[1];
+```
+
+#### Copying
+
+The types Rust designates as `Copy` types are never moved and always copied.
+The source of the assignment remains initialized and usable, with the same
+value it had before.
+
+What about types you define yourself? These types are by default considered non
+copiable. But if all the fields of your struct are themselves Copiable, then
+your type can be Copiable as well by placing this attribute `#[derive(Copy,
+Cloen)]`.
 
 ### Summary
 
