@@ -110,10 +110,25 @@ struct Label { number: u32 }
 - Basic types, such as integers, float, characters, don't follow the move
   semantic; their values are **copied**;
 - Data types defined by the user are by default non `Copy` types;
-- A user defined data type can be a `Copy` type if all of its fields are `Copy` and it declares itself as a `Copy` type by using this attribute `#[derive(Copy, Clone)]`;
+- A user defined data type can be a `Copy` type if all of its fields are `Copy`
+  and it declares itself as a `Copy` type by using this attribute
+`#[derive(Copy, Clone)]`;
 
-# References
+## References
+
+A reference lets you access a value without affecting the owner or the value's
+lifetime. Everytime you create a reference to some value you are **borrowing**
+it from its owner. Eventually you will have to return the value to its owner.
+
+References come in two kinds, **shared	references** and **mutable
+references**. A shared reference lets you read but not modify its referent, you
+can hava as many of those at a time as you like. With a mutable reference you
+may both read and modify the value, but you cannot have any other references to
+that value at the same time.
 
 - Blandy, J. and Orendorff, J. (2017). Programming Rust. 1st ed.
 - Doc.rust-lang.org. (2018). The Rust Programming Language. [online] Available
   at: https://doc.rust-lang.org/book/2018-edition [Accessed 22 Aug. 2018].
+ok at a different kind of reference: slices.
+
+
