@@ -1,0 +1,55 @@
+= Modello di dispersione di Torrance-Sparrow
+Destro Fabrizio <destro.fabrizio@gmail.com>
+
+== Torrance-Sparrow
+
+Il modello di dispersione Torrance-Sparrow fu' sviluppato da _E. M. Sparrow_ e
+_K. E. Torrance_ e presentato per la prima volta nel loro lavoro
+_"Theory for Off-Specular Reflection From Roughened Surfaces"_ <<1>>. La
+formulazione analitica sviluppata simula il fenomeno fisico di riflessione
+di materiali *isotropici* che presentato una riflessione 'ruvida'
+(*rough reflection*). Secondo questo modello la riflessione è dovuta ad
+un'insieme di concavità a forma di piramide rovesciata, in cui le faccie sono
+chiamate *microfaccie*. La distribuzione dell'orientamento di queste
+*microfacce* influisce sulla 'ruvidità' del riflesso e quindi su come apparirà
+l'oggetto.
+
+=== Formulazione
+
+Il fenomeno fisico modellato si limita come già detto alla sola  riflessione,
+questo si riflette nel fatto che la formulazione dipende solamente dalla
+direzione incidente di osservazione e da quella uscente di riflessione.
+La formula di riflessione è quindi classificatacome funzione di riflessione
+*BRDF* e la sua espressione è la seguente
+
+image::./equazioni/cook-torrance.svg[Equazione Torrance-Sparrow, 1200]
+
+dove D è la funzione di distribuzione delle microfacce, F è il fattore di
+Fresnel e G è il fattore geometrico di attenuazione.
+
+==== Distribuzione delle microfacce
+
+La funzione di distribuzione della microfacce D ci dice qual'è la distribuzione
+delle normali delle microfacce rispetto al vettore *h*. D è una funzione scalare
+definita sull'insieme delle direzioni sull'emisfera positiva ed essendo una
+distribuzione il suo integrale proiettato sul piano del dominio ha valore
+unitario <<2>>, in formule
+
+image::./equazioni/normal-distribution.svg[Distribuzione delle normali, 1000]
+
+Una delle distribuzioni più utilizzata è quella di Beckmann <<3>>, dipendente da un
+unico parametro m. La formula della distribuzione è riportata di seguito, dove
+il valore di *sigma* è l'angolo tra il vettore *h* e la normale.
+
+image::./equazioni/beckmann-distribution.svg[Distribuzione di Beckmann, 1000]
+
+[NOTE]
+Un'altro modo di interpretare il valore funzione di distribuzione D è come la
+frazione di microfacce orientate nella stessa direzione del vettore *h*.
+
+=== Riferimenti
+
+[bibliography]
+- [[[1]]] Torrance, K. E., & Sparrow, E. M. (1967). Theory for Off-Specular Reflection From Roughened Surfaces. Journal of the Optical Society of America, 57(9), 1105. https://doi.org/10.1364/JOSA.57.001105
+- [[[2]]] http://www.reedbeta.com/blog/hows-the-ndf-really-defined/
+- [[[3]]] https://en.wikipedia.org/wiki/Specular_highlight#Beckmann_distribution

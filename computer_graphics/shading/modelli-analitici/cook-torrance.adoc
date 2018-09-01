@@ -1,0 +1,14 @@
+= Modello di dispersione di Cook-Torrance
+Destro Fabrizio <destro.fabrizio@gmail.com>
+
+== Torrance-Sparrow
+
+Il modello di dispersione Cook-Torrance fu' sviluppato da _Robert L. Cook_ e
+_Kenneth E. Torrance_ e presentato per la prima volta nel loro lavoro
+_"Theory for Off-Specular Reflection From Roughened Surfaces"_ [1].
+
+=== Formulazione
+
+
+
+=== Riferimenti
