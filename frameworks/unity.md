@@ -17,6 +17,11 @@ this is the way;
 
 - Every UI element must be a child of a Canvas;
 
+## Shaders
+
+- *Unilt shaders*: this types of shaders do not write into the **depth buffer**;
+	- this shader will be replaced to generate the depth texture, unless deferred shading is used;
+
 ## Gotchas
 
 - `Raycast` only works if the object has a `Mesh Collider` component;
