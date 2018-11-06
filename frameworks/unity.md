@@ -1,6 +1,25 @@
 # Unity
 
+## Framework
+
+### Classes
+
+- **MonoBehaviour** is the base class from which every other component derives;
+	- This class defines three particular functions:
+		- `void Start();` its called when a component is initialized;
+		- `void Update();` its called for each frame;
+
+- **Vector3** represents a direction inside a three dimensional space;
+	- 
+- **Raycast**, each ray is represented by an origin point, a direction and a
+  distance;
+	- An instance of this class could be used to determine a collision;
+
 ## Components
+
+You can attach many **components** to a single instance of a Game Object of the
+scene. You can access these components using the `MonoBehaviour`'s method
+`GetComponent<Class>();`
 
 ### Canvas
 
@@ -19,8 +38,10 @@ this is the way;
 
 ## Shaders
 
-- *Unilt shaders*: this types of shaders do not write into the **depth buffer**;
-	- this shader will be replaced to generate the depth texture, unless deferred shading is used;
+- *Unilt shaders*: this types of shaders do not write into the **depth
+  buffer**;
+	- this shader will be replaced to generate the depth texture, unless
+	  deferred shading is used;
 
 ## Gotchas
 
