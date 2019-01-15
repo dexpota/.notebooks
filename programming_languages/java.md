@@ -4,6 +4,7 @@
 
 ### Default Methods or Extension Methods
 > [Reference](https://winterbe.com/posts/2014/03/16/java-8-tutorial/)
+> Requirements: Java 8
 
 Starting from Java 8 it is possible to add non-abstract method implementations
 to interfaces by using `default` keyword.
@@ -19,6 +20,7 @@ interface Formula {
 ```
 
 ### Functional Interfaces
+> Requirements: Java 8
 
 An interface with exactly one abstract method declaration is called *functional
 interface*. To ensure that an interface meets the requirements you can add the
