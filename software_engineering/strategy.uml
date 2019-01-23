@@ -1,5 +1,4 @@
 @startuml
-
 !include style.iuml
 
 skinparam class {
@@ -45,6 +44,7 @@ hide circle
 hide <<Hidden>>
 
 class Context {
+	strategy: Strategy
 	+operation()
 }
 
