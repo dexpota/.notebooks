@@ -1,5 +1,39 @@
 # git
 
+For start you should with the following definitions, and explains that git is distribuited
+
+The development environment with:
+- Working directory
+- Staging area or index
+- Local repository (.git directory)
+
+Three states of file:
+- modified;
+- committed;
+- staged;
+
+A server with:
+- Remote repository
+
+By using the structure just defined you should explain some basic commands like *clone*, making changes and *updating* the remote server.
+
+- cloning a repository: the files are downloaded and moved to two places: the working directory and the local repository;
+
+There are two types of files inside the working directory: *tracked* (known by git) and *untracked* (unkown by git).
+
+- updated a remote repository by following these steps:
+	- add changed or untracked files to the staging area (modified);
+		- you can see the differences by using git diff;
+	- create a commit in the local repository (staged);
+		- differences: git diff --staged;
+	- push the commits to the remote repository (committed);
+		- differences: git diff [^REF]
+
+- fetch data to the local repository;
+
+- pull data to the local repository and merge with the working directory;
+	- if you want you can merge without bubble by using git pull --rebase, the local changes will be replayed on top 
+
 ## Cookbook
 
 - adding files:
@@ -61,3 +95,11 @@ git fetch && git merge
 # or
 git submodule update --remote
 ```
+
+# Glossary
+
+- The .git directory is where Git stores the metadata and object database for the project;
+
+- The working directory is a single checkout of one version of the project, placed on disk to use or modify;
+
+- The staging area, or index, is a file that stores information about what will go into your next commit
