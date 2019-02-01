@@ -121,3 +121,7 @@ These objects effectively **leak memory**.
   not closed correctly they might leak system memory;
     - to solve this issue remember to always close your resources (in case of
       an exception too);
+
+- Improper `hashCode()` and `equals()` implementation: when using a custom
+  Class as key type for a Map, the map might get populated with logically
+  duplicated values;
