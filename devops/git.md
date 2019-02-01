@@ -77,11 +77,31 @@ git rm --cached
 
 ## submodule
 
-- Add an existing git repository as a submodule;
+A submodule allows you to keep another Git repository in a subdirectory of your
+repository. This can be used to include external dependencies.
+
+### add
+
+Add the given repository as a submodule at the given path. 
+
 ```bash
-git submodule add <uri> <path>
+git submodule [--quiet] add [-b <branch>] [-f|--force] [--name <name>]
+	      [--reference <repository>] [--depth <depth>] [--] <repository> [<path>]
 ```
-- A new file named .gitmodules will be generated, this file contains the mapping between the module's uri and the local directory;
+
+The optional argument `<path>` is the relative location for the cloned
+submodule. If `<path>` is not given, the "humanish" part of the source
+repository is used. The `<path>` is also used as the submodule’s logical name
+in its configuration entries unless `--name` is used to specify a logical name.
+
+The optional argument `<branch>` set which remote branch the submodule should
+track.  A special value of . is used to indicate that the name of the branch in
+the submodule should be the same name as the current branch in the current
+repository.
+
+A new file named `.gitmodules` will be generated, this file contains the
+mapping between the module's uri and the local directory;
+
 - To clone a project with submoodule you can use this command:
 ```bash
 git submodule init && git submodule update
