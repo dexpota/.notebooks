@@ -119,9 +119,29 @@ These objects effectively **leak memory**.
 
 - System resources (e.g. database connection, input streams, ...): if they are
   not closed correctly they might leak system memory;
+    - an example of this kind of leaks is the improper use of `ThreadLocal`,
+      this should be treated as a resource and always closed when no longer
+      needed;
     - to solve this issue remember to always close your resources (in case of
       an exception too);
 
 - Improper `hashCode()` and `equals()` implementation: when using a custom
   Class as key type for a Map, the map might get populated with logically
   duplicated values;
+
+- Inner classes referencing outer classes: non-static inner classes *always*
+  reference an instance of the enclosing class. If we keep a reference to this
+  inner class and the outer class goes out of scope, then the outer class will
+  not be collected by the GC;
+    - a possible solution is to declare the inner class as static, without
+      adding reference to the outer class;
+
+- Static inner classes referencing outer classes: see above;
+
+- Non optimal `finalize()` method: when a class define this method its
+  instances are not instantly collected by the GC, but are queued for
+  finalization. If the finalizer queue cannot keep up with the GC the
+  application will leak memory;
+
+- Interned String: these strings are saved inside a special memory area and
+  lives as long as your application;
