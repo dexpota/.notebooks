@@ -22,43 +22,43 @@ By using the structure just defined you should explain some basic commands like 
 There are two types of files inside the working directory: *tracked* (known by git) and *untracked* (unkown by git).
 
 - updated a remote repository by following these steps:
-	- add changed or untracked files to the staging area (modified);
-		- you can see the differences by using git diff;
-	- create a commit in the local repository (staged);
-		- differences: git diff --staged;
-	- push the commits to the remote repository (committed);
-		- differences: git diff [^REF]
+    - add changed or untracked files to the staging area (modified);
+        - you can see the differences by using git diff;
+    - create a commit in the local repository (staged);
+        - differences: git diff --staged;
+    - push the commits to the remote repository (committed);
+        - differences: git diff [^REF]
 
 - fetch data to the local repository;
 
 - pull data to the local repository and merge with the working directory;
-	- if you want you can merge without bubble by using git pull --rebase, the local changes will be replayed on top 
+    - if you want you can merge without bubble by using git pull --rebase, the local changes will be replayed on top
 
 ## Cookbook
 
 - adding files:
-	- `git add -N` express the intention to add file;
-	- `git add -P` add interactively;
+    - `git add -N` express the intention to add file;
+    - `git add -P` add interactively;
 
 - checkout:
-	- `git checkout -p` interactive checkout;
+    - `git checkout -p` interactive checkout;
 
 - `git rebase -x <command>` execute the command after each rebase;
 
 - revisions:
-	- different types of identifier for each revision: sha1, branch_name, symbolic_name(HEAD), HEAD@{yesterday}
+    - different types of identifier for each revision: sha1, branch_name, symbolic_name(HEAD), HEAD@{yesterday}
 
 - branch:
-	- `git branch --merged [-r|--remote]` show a list of merged branches
+    - `git branch --merged [-r|--remote]` show a list of merged branches
 
 - `git reflog` show a list of all local activities;
 
 - configuration:
-	- `git config --global user.email <value>` set the user email, this value is saved inside `~/.gitconfig`;
-	- `git config --global user.name <value>` set the user name, this value is saved inside `~/.gitconfig`;
-	- without the `--global` flag the values are saved inside the current repository configuration file `.git/config`;
-	- `git config --global --add alias.st status`;
-		- aliases can execute shell command;
+    - `git config --global user.email <value>` set the user email, this value is saved inside `~/.gitconfig`;
+    - `git config --global user.name <value>` set the user name, this value is saved inside `~/.gitconfig`;
+    - without the `--global` flag the values are saved inside the current repository configuration file `.git/config`;
+    - `git config --global --add alias.st status`;
+        - aliases can execute shell command;
 
 - Change the remote URI;
 ```bash
@@ -82,11 +82,11 @@ repository. This can be used to include external dependencies.
 
 ### add
 
-Add the given repository as a submodule at the given path. 
+Add the given repository as a submodule at the given path.
 
 ```bash
 git submodule [--quiet] add [-b <branch>] [-f|--force] [--name <name>]
-	      [--reference <repository>] [--depth <depth>] [--] <repository> [<path>]
+          [--reference <repository>] [--depth <depth>] [--] <repository> [<path>]
 ```
 
 The optional argument `<path>` is the relative location for the cloned
