@@ -93,3 +93,31 @@ method calls in a row.
 | map       | The intermediate operation map converts each element into another object via the given function.    |
 | count     | Count is a terminal operation returning the number of elements in the stream as a long.             |
 | reduce    | This terminal operation performs a reduction on the elements of the stream with the given function. |
+
+## Memory Leaks
+
+> [Reference](https://www.baeldung.com/java-memory-leaks)
+
+Java is a language where the memory is managed by a Garbage Collector **GC**.
+The GC periodically searches for allocated memory not reachable by the active
+references, to be freed.
+
+With this memory management system is still possible to leak memory. In fact,
+some objects might be still reachable by some references but not used anywhere.
+These objects effectively **leak memory**.
+
+### Possible sources of memory leaks
+
+- Static fields growing indefinitely: these fields have usually the same
+  lifetime of your application, so they will retain their memory until the
+  application is closed;
+
+    ```java
+    // This field might grows without restrictions if not used properly
+    public static List<Double> list = new ArrayList<>();
+    ```
+
+- System resources (e.g. database connection, input streams, ...): if they are
+  not closed correctly they might leak system memory;
+    - to solve this issue remember to always close your resources (in case of
+      an exception too);
