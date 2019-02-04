@@ -31,3 +31,8 @@ class MainActivity extends AppCompatActivity{
     }
 }
 ```
+
+## Static references to your Activity or Views
+
+If you reference an activity or view directly or indirectly from a static
+reference, the activity would not be garbage collected after it is destroyed.
