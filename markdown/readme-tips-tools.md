@@ -1,5 +1,8 @@
 # Tips and tools to write your readme file
 
+> [Reference](https://help.github.com/articles/about-readmes/)
+> [Reference](https://medium.freecodecamp.org/how-to-get-up-to-3500-github-stars-in-one-week-339102b62a8f)
+
 ![Readme structure](./readme-structure.png)
 
 - **Badges** are a nice way to quickly show the status of your project: build
