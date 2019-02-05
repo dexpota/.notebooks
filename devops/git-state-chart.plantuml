@@ -1,0 +1,17 @@
+@startuml
+
+hide empty description
+
+untracked --> tracked : git add
+tracked --> untracked
+
+tracked --> modified
+modified --> tracked
+
+modified --> staged
+staged --> modified
+
+staged --> committed
+committed --> staged
+
+@enduml
