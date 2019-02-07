@@ -2,12 +2,16 @@
 
 ## Strategy
 
-**What**. Define a family of algorithms, encapsulate each one, and make them
-interchangeable. Strategy lets the algorithm vary independently from the
-clients that use it.
+> [Reference](https://sourcemaking.com/design_patterns/strategy)
 
-**How**. Capture the abstraction in an interface, bury implementation details
-in derived classes.
+- The *Strategy* pattern gives you the ability to define a family of algorithms,
+encapsulate each one, and make them interchangeable.
+
+- *Strategy* reduces the *coupling* between the clients and the algorithms. The
+algorithm can vary independently from the clients that use it.
+
+- The pattern capture the abstraction in an interface, and bury the
+  implementation details in derived classes.
 
 <p align="center">
 <img src="strategy.png" height="350px"/>
