@@ -1,5 +1,20 @@
 # Kotlin Programming Language
 
+## Scripting
+
+Kotlin can also be run as a script, create a file with `kts` extension and
+optionally a shebang. The following is an example of script file:
+
+```kotlin
+#!/usr/bin/env kotlinc -script
+
+println("Hello World!")
+```
+
+```bash
+kotlin -c <script> <args>
+```
+
 ## Basics
 
 ### Variables
