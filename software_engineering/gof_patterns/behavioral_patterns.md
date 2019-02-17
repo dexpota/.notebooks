@@ -24,6 +24,8 @@
 <img src="./.assets/chain_of_responsibility_revisited.png" height="450px"/>
 </p>
 
+- [Kotlin example code](./.code/chain_of_responsibility_error_handling.kts);
+
 ## Command
 ## Interpreter
 ## Iterator
