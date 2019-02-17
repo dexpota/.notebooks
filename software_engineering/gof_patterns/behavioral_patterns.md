@@ -16,6 +16,8 @@
 <img src="./.assets/chain_of_responsibility.png" height="350px"/>
 </p>
 
+- [Kotlin example code](./.assets/chain_of_responsibility.kts);
+
 ## Command
 ## Interpreter
 ## Iterator
