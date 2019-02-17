@@ -38,7 +38,7 @@ algorithm can vary independently from the clients that use it.
   implementation details in derived classes.
 
 <p align="center">
-<img src="strategy.png" height="350px"/>
+<img src="./.assets/strategy.png" height="350px"/>
 </p>
 
 ## Template method
