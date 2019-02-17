@@ -12,11 +12,17 @@
 - The **receivers** are chained together and they pass the request along the
   chain until an object handles it;
 
+### Structure and code
+
 <p align="center">
-<img src="./.assets/chain_of_responsibility.png" height="350px"/>
+<img src="./.assets/chain_of_responsibility.png" height="450px"/>
 </p>
 
 - [Kotlin example code](./.assets/chain_of_responsibility.kts);
+
+<p align="center">
+<img src="./.assets/chain_of_responsibility_revisited.png" height="450px"/>
+</p>
 
 ## Command
 ## Interpreter
@@ -38,6 +44,9 @@ algorithm can vary independently from the clients that use it.
 
 - The pattern capture the abstraction in an interface, and bury the
   implementation details in derived classes.
+
+
+### Structure and code
 
 <p align="center">
 <img src="./.assets/strategy.png" height="350px"/>

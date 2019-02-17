@@ -1,0 +1,106 @@
+@startuml
+!include style.iuml
+
+skinparam class {
+	FontColor CLASS_FONT_COLOR
+	FontName CLAS_FONT_NAME
+	FontSize LARGE_TEXT
+
+	ArrowColor CLASS_ARROW_COLOR
+	ArrowThickness 2
+
+	BackgroundColor CLASS_BACKGROUND_COLOR
+	BorderColor CLASS_BORDER_COLOR
+	BorderThickness CLASS_BORDER_THICKNESS
+
+	StereotypeFontName CLASS_FONT_NAME
+	StereotypeFontColor CLASS_FONT_COLOR
+	StereotypeFontSize SMALL_TEXT
+
+	AttributeFontName CLASS_FONT_NAME
+	AttributeFontColor CLASS_FONT_COLOR
+	AttributeFontSize NORMAL_TEXT
+}
+
+skinparam note {
+	BackgroundColor NOTE_BACKGROUND_COLOR
+	BorderColor NOTE_BORDER_COLOR
+	BorderThickness NOTE_BORDER_THICKNESS
+
+	FontName NOTE_FONT_NAME
+	FontColor NOTE_FONT_COLOR
+}
+
+
+skinparam roundcorner 8
+skinparam shadowing false
+skinparam classAttributeIconSize 0
+skinparam linetype ortho
+
+hide empty members
+hide empty fields
+hide circle
+
+hide <<Hidden>>
+
+class Client {
+	handler: Handler
+}
+
+abstract class Handler <<abstract>> {
+	nextHandler: Handler
+	+handle(): Boolean
+	abstract -handleStrategy(): Boolean
+}
+
+note as N3
+	…
+	if(handleStrategy())
+		return true
+	else if(nextHandle is not null)
+		return nextHandler.handle()
+	else
+		return false
+	…
+end note
+
+class ConcreteHandler1 {
+	-handleStrategy()
+}
+
+class ConcreteHandler2 {
+	-handleStrategy()
+}
+
+note as N1
+	…
+	// call start of handling chain
+	handler.handle()
+	…
+end note
+
+note as N2
+	…
+	if(canHandleRequest()) {
+		…
+		return true
+	}else {
+		return false
+	}
+	…
+end note
+
+Handler <|... ConcreteHandler1
+Handler <|... ConcreteHandler2
+
+Client -> Handler
+
+Handler -> Handler
+
+Handler -> N3
+
+N2 -> ConcreteHandler2
+
+N1 -> Client
+
+@enduml
