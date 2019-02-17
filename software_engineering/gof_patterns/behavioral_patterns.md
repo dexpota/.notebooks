@@ -18,7 +18,7 @@
 <img src="./.assets/chain_of_responsibility.png" height="450px"/>
 </p>
 
-- [Kotlin example code](./.assets/chain_of_responsibility.kts);
+- [Kotlin example code](./.code/chain_of_responsibility.kts);
 
 <p align="center">
 <img src="./.assets/chain_of_responsibility_revisited.png" height="450px"/>

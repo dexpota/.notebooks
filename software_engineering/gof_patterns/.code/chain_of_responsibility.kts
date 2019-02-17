@@ -1,8 +1,10 @@
 #!/usr/bin/env kotlinc -script
 import kotlin.random.Random
 
-abstract class Handler(val handler: Handler?) {
-    abstract fun handle(value: Int)
+abstract class Handler(private val handler: Handler?) {
+    open fun handle(value: Int) {
+        handler?.handle(value)
+    }
 }
 
 class NegativeHandler(handler: Handler?) : Handler(handler) {
@@ -10,7 +12,7 @@ class NegativeHandler(handler: Handler?) : Handler(handler) {
         if (value < 0) {
             println("Negative value handled $value")
         }else {
-            handler?.handle(value)
+            super.handle(value)
         }
     }
 }
@@ -20,7 +22,7 @@ class PositiveHandler(handler: Handler?) : Handler(handler) {
         if (value > 0) {
             println("Positive value handled $value")
         }else {
-            handler?.handle(value)
+            super.handle(value)
         }
 
     }
@@ -31,7 +33,7 @@ class ZeroHandler(handler: Handler?) : Handler(handler) {
         if (value == 0) {
             println("Zero value handled $value")
         }else {
-            handler?.handle(value)
+            super.handle(value)
         }
     }
 }
