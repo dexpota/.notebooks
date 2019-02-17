@@ -1,5 +1,21 @@
 # Behavioral Patterns
+
 ## Chain of responsibility
+> [Reference]()
+
+- The *Chain of responsibility pattern avoids coupling the sender of a request
+  to its receiver;
+
+- The **sender** doesn't know who is going to handle a request, the request has
+  an **implicit receiver**;
+
+- The **receivers** are chained together and they pass the request along the
+  chain until an object handles it;
+
+<p align="center">
+<img src="./.assets/chain_of_responsibility.png" height="350px"/>
+</p>
+
 ## Command
 ## Interpreter
 ## Iterator
