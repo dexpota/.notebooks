@@ -75,6 +75,14 @@ git remote -v
 git rm --cached
 ```
 
+## custom commands
+
+Define custom commands for git is simple, follow these steps:
+
+1. Create an executable file, for example a bash script `git-command.sh`;
+2. Change the the file permission to executable;
+3. Move the file to a directory included in your system $PATH;
+
 ## submodule
 
 A submodule allows you to keep another Git repository in a subdirectory of your
