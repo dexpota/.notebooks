@@ -27,6 +27,15 @@
 - [Kotlin example code](./.code/chain_of_responsibility_error_handling.kts);
 
 ## Command
+
+> [Reference]()
+
+- The *Command* pattern encapsulates a request as an object;
+
+- This pattern can be extended to support the queueing and the logging of
+  multiple requests, together with undoable operations;
+
+
 ## Interpreter
 ## Iterator
 ## Mediator
