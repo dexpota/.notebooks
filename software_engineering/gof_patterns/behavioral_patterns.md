@@ -32,6 +32,10 @@
 
 - The *Command* pattern encapsulates a request as an object;
 
+- The **request** object encapsulates all information needed to perform an
+  action, this includes the method name, the method parameters and the
+  **receiver** object;
+
 - This pattern can be extended to support the queueing and the logging of
   multiple requests, together with undoable operations;
 
