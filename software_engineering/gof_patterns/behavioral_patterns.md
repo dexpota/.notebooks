@@ -39,6 +39,9 @@
 - This pattern can be extended to support the queueing and the logging of
   multiple requests, together with undoable operations;
 
+<p align="center">
+<img src="./.assets/command.png" height="450px"/>
+</p>
 
 ## Interpreter
 ## Iterator
