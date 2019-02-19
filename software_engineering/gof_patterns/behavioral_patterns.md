@@ -30,11 +30,12 @@
 
 > [Reference]()
 
-- The *Command* pattern encapsulates a request as an object;
+- The *Command* pattern encapsulates a request to perform some action as an
+  object called **Command**;
 
-- The **request** object encapsulates all information needed to perform an
+- The **Command** object encapsulates all information needed to perform an
   action, this includes the method name, the method parameters and the
-  **receiver** object;
+  **Receiver** object;
 
 - This pattern can be extended to support the queueing and the logging of
   multiple requests, together with undoable operations;
