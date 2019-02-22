@@ -25,10 +25,10 @@ create a new project with `npm init` and fill in all required fields. Then,
 install typescript locally as a dev dependency `npm install --save-dev
 typescript`.
 
-We will soon write typescript code and transpiling it into javascript.  The
-following is a simple typescript example that alert the user when the button is
-pressed. Copy this example and save it inside the `ts` directory with the name
-`greeter.ts`.
+We are now going to write a typescript file and transpiling it into javascript.
+The following is a simple typescript example that alert the user when the
+button is pressed. Copy this example and save it inside the `ts` directory with
+the name `greeter.ts`.
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=./.code/hello-typescript-world/ts/greeter.ts) -->
 <!-- The below code snippet is automatically added from ./.code/hello-typescript-world/ts/greeter.ts -->
@@ -57,5 +57,36 @@ document.body.appendChild(button);
 ```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
-The result of the transpiling will be save into the `js` directory. But before
-this, we need to add this configuration to the `package.json` file.
+Before we can transpile the script we need to add this configuration to the
+`package.json` file. This lines define a script command that will be executed
+by `npm`. Now running the command `npm run tsc` will invoke the typescript
+compiler and generate the javascript into the `js` directory.
+
+```json
+{
+  …
+  "scripts": {
+    "tsc": "tsc --outDir=js ts/greeter.ts"
+  }
+  …
+}
+```
+
+To see the result of the script we first need a simple html file to include the
+generated javascript. Copy the following html code and save it into a file at
+the root of the project.
+
+<!-- AUTO-GENERATED-CONTENT:START (CODE:src=./.code/hello-typescript-world/index.html) -->
+<!-- The below code snippet is automatically added from ./.code/hello-typescript-world/index.html -->
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Typescript Greeeter</title>
+  </head>
+  <body>
+    <script src="js/greeter.js"></script>
+  </body>
+</html>
+```
+<!-- AUTO-GENERATED-CONTENT:END -->
