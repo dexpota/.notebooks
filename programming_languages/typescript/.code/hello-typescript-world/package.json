@@ -1,0 +1,16 @@
+{
+  "name": "hello-typescript-world",
+  "version": "1.0.0",
+  "description": "A simple hello world project.",
+  "main": "index.html",
+  "scripts": {
+	"tsc": "tsc ts/greeter.ts"
+  },
+  "author": "Destro Fabrizio",
+  "devDependencies": {
+    "typescript": "^3.3.3333"
+  },
+  "dependencies": {
+    "modaal": "^0.4.4"
+  }
+}
