@@ -31,6 +31,30 @@ pressed. Copy this example and save it inside the `ts` directory with the name
 `greeter.ts`.
 
 <!-- AUTO-GENERATED-CONTENT:START (CODE:src=./.code/hello-typescript-world/ts/greeter.ts) -->
+<!-- The below code snippet is automatically added from ./.code/hello-typescript-world/ts/greeter.ts -->
+```ts
+class Greeter {
+    greeting: string;
+
+    constructor(message: string) {
+        this.greeting = message;
+    }
+
+    greet() {
+        return "Hello, " + this.greeting;
+    }
+}
+
+var greeter = new Greeter("world");
+
+var button = document.createElement('button');
+button.textContent = "Say Hello";
+button.onclick = function() {
+    alert(greeter.greet());
+}
+
+document.body.appendChild(button);
+```
 <!-- AUTO-GENERATED-CONTENT:END -->
 
 The result of the transpiling will be save into the `js` directory. But before
