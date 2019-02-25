@@ -26,6 +26,21 @@
 :set softtabstop=4 shiftwidth=4 expandtab
 ```
 
+### Visualizing tabs
+
+If you want to be sure of what tab style is currently used in your file, you
+can use syntax highlighting to show tabs. The following code will highlight
+each matched tab in blue.
+
+```vim
+syntax match Tab /\t/
+hi ctermbg=blue
+```
+
+This code cannot be pasted inside your configuration file, because the
+highlighing rules are flushed each time a file is loaded. An alternative is to
+put this code inside a syntax highlighting script in `.vim/syntax` directory.
+
 ## Filetype plugin
 > `:help ftplugin`
 
