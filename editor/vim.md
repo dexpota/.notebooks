@@ -6,8 +6,8 @@
 - `tabstop` or `ts` is a **local** **numeric** option: number of columns that a
   tab in the file counts for. This option tells vim how many columns a tab is;
 
-- `expandtab` is a **local** **boolean** option: when set, everytime you insert
-  a tab it will be expanded to spaces;
+- `expandtab` is a **local** **boolean** option: if set, when in insert mode,
+  it will expanded each tab into spaces;
 
 - `shiftwidth` is a **local** **numeric** option: number of spaces to use for
   each step of (auto)indent;
@@ -17,6 +17,14 @@
   will use spaces, otherwise a mix of tabs and spaces. When *expandtab* is set
   it will always expand to spaces;
 
+### Common configurations
+
+```vim
+" Tabs are four columns wide. Each indentation level is one tab.
+:set tabstop=4 softtabstop=4 shiftwidth=4 noexpandtab
+" Each indentation level is four spaces. Tabs are not used
+:set softtabstop=4 shiftwidth=4 expandtab
+```
 
 ## Filetype plugin
 > `:help ftplugin`
