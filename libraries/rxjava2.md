@@ -14,3 +14,11 @@ interface, are hotly broadcasted to all subscribed Observers.
 
 Subjects are usually used to bridge together imperative programming with
 reactive programming.
+
+### Using Subjects
+
+More likely, you will use Subjects to eagerly subscribe to an unknown
+number of multiple source Observables and consolidate their emissions as a
+single Observable. This can be helpful in modularized code bases where
+decoupling between Observables and Observers takes place and executing
+Observable.merge() is not that easy.
