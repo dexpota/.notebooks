@@ -21,12 +21,25 @@ event, this Subject must be used only with finite sources. The `UnicastSubject`
 will buffer all emissions until an Observer subscribes to it, only one Observer
 can subscribe to this Subject.
 
-### Use cases
+### Using Subjects
+
+> Do not expose your Subjects or at least cast it down.
+
+> Subjects are not disposable, they will not release the resources of upstream Observables.
 
 Subjects are usually used to bridge together imperative programming with
-reactive programming.
+reactive programming. They should be used with caution, if you are going to
+expose a Subject you could loose the integrity of the source, other values
+could be emitted outside your control. To mitigate this issue you should
+encapsulate a Subject inside a class and cast it down to Observable if you have
+to expose it.
 
-### Combining Observables
+Be aware, Subjects are not disposable either and they will not release their
+sources int he event `dispose` on a subscription downstream.
+
+### Use cases
+
+#### Combining Observables
 
 You can use Subjects to eagerly subscribe to an unknown number of multiple
 source Observables and consolidate their emissions as a single Observable. This
