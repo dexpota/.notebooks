@@ -22,6 +22,62 @@ dependencies {
 }
 ```
 
+## Up and running
+
+1. Define your components, for example a Repository and a Presenter;
+
+```kotlin
+
+interface HelloRepository {
+  fun giveHello(): String
+}
+
+class HelloRepositoryImpl() : HelloRepository {
+  override fun giveHello() = "Hello Koin"
+}
+
+class MySimplePresenter(val repo: HelloRepository) {
+  fun sayHello() = "${repo.giveHello()} from $this"
+}
+```
+
+2. User the `module` function to declare a Koin module;
+
+```kotlin
+val appModule = module {
+  // single instance of HelloRepository
+  single<HelloRepository> { HelloRepositoryImpl()  }
+  // Simple Presenter Factory
+  factory { MySimplePresenter(get())  }
+}
+```
+
+3. Start Koin by calling `startKoin` inside your Application class;
+
+```kotlin
+class MyApplication : Application(){
+  override fun onCreate() {
+    super.onCreate()
+    // Start Koin
+    startKoin(this, listOf(appModule))
+  }
+}
+```
+
+4. Inject the dependencies by using the `inject` delegator;
+
+```kotlin
+class MySimpleActivity : AppCompatActivity() {
+  // Lazy injected MySimplePresenter
+  val firstPresenter: MySimplePresenter by inject()
+
+  override fun onCreate(savedInstanceState: Bundle?) {
+    super.onCreate(savedInstanceState)
+    //...
+  }
+}
+```
+
 ## Scopes
 
 A Scope define the amount of time an object’s state persists, when the scope
