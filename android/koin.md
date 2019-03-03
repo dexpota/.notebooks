@@ -48,3 +48,31 @@ dependencies {
   implementation 'org.koin:koin-androidx-scope:{revnumber}'
 }
 ```
+
+We can roughly categorize components by their lifecycle into three categories.
+
+- Long live components are used by several screens and lives as long as the
+  application, examples: Services and Data Repositories;
+  - We can define these components inside our Koin module by using a `single`
+    definition;
+
+- Medium live components are used by several screens and must be dropped after
+  some amount of time;
+  - We can use a `scope` definition to declare these components and manage
+    manually the opening and closening of it;
+  - When we need to start using a component binded to a scope we can create the
+    scope with `getKoin().createScope()`;
+  - When we no longer need the component we can close the scope with
+    `getKoin().getScope().close()`;
+
+- Short live components are used by only one screen and must be dropped when no
+  longer needed, these components are usually tied up to the UI;
+    - These components must be created each time they are requested, this can
+      be accomplished by defining it with a `factory` definition;
+    - An alternative is to use a `scope` definition and bind it to the
+      lifecycle with `bindScope`, this way the scope will be closed when the
+      lifecycle ends;
+
+Most of Android memory leaks comes from referencing a UI/Android component from
+a non Android component. The system keeps a reference on it and can’t totally
+drop it via garbage collection.
