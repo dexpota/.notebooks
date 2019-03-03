@@ -71,3 +71,37 @@ public class Singleton {
   // more code
 }
 ```
+
+## Inner Classes (non-static nested classes) and Anonymous Inner Classes
+
+> Static reference to an inner class.
+
+When you declare a static reference to an instance of an inner class inside an
+Activity, the Activity will not be garbage collected. Remember that an inner
+class holds a reference to its outer class regardless of the reference being
+declared or not.
+
+```java
+
+class LeakyActivity {
+  private static InnerClass inner;
+
+
+  class InnterClass {
+    // this attribute is always declared, by the programmer or the compiler.
+    private LeakyActivity activity;
+  }
+}
+```
+
+This problem could be avoided by simply not declaring a static references to
+the inner classes. Another solution is to use static nested classes without
+references to acitivities or views, in fact, these classes doesn't declare a
+reference to the outer class.
+
+If you need references to the outer class and a static reference to the inner
+class, consider using WeakReference to the activity. The garbage collector can
+safely collect the memory if only weak references are pointing to it.
+
+These same issues are present when declaring an anonymous inner class and are
+common when declaring AsyncTask, Handlers, Threads and TimerTask.
