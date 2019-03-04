@@ -27,7 +27,7 @@ behaves like an `Observable`, in fact multiple `Observer`can subscribe to it
 and wait for events. All events signaled to the `Subject`, via its `Observer`
 interface, are **hotly** broadcasted to all subscribed Observers.
 
-There are multiple flavors of `Subjects`. The `BehaviourSubject` will replay
+There are multiple flavors of `Subjects`. The `BehaviorSubject` will replay
 the last emitted item to each new subscribed Observer and emit all later
 events. The `ReplaySubject` captures all emissions regardless of the presence
 of downstream Observers and replay them to each new subscriber. The
