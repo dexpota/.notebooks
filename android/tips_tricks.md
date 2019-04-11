@@ -2,6 +2,33 @@
 
 ## Tips
 
+### Resources
+
+You can split your resource files for string items into different files, for
+example you can have a resource file dedicated to error messages and one to
+dialog messages. All the items defined in these files will be available through
+the R resource class. The followings are two distinct resources file for string
+values.
+
+```xml
+<!-- strings.xml -->
+<resources>
+    <string name="app_name">Playground</string>
+</resources>
+```
+
+```xml
+<!-- strings_dialogs.xml -->
+<resources>
+    <string name="dialog_generic_title">Generic Dialog</string>
+    <string name="dialog_generic_message">This is a message from your Alert Dialog!</string>
+    <string name="dialog_generic_positive">Positive</string>
+    <string name="dialog_generic_negative">Negative</string>
+    <string name="dialog_generic_neutral">Neutral</string>
+</resources>
+```
+
+
 ### Deprecated Functions and Alternatives
 
 The function `getColor()` is deprecated and should be substituted with
