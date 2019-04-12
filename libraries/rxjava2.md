@@ -99,3 +99,18 @@ It is important to note that the first `Observable` to call `onComplete` on
 `Subject` is going to cease other `Observable` from pushing their emissions.
 This means that you will mostly likely use `Subjects` for inifinite
 Obseravables.
+
+## Recipies
+
+### Delayed execution
+> [Reference](https://stackoverflow.com/a/44699057/9942979)!
+
+You can use the following example to execute a function or a method after some
+delay. The function `getTransactionDetails` will be execute after 5 seconds on
+the main Android thread.
+
+```kt
+Completable
+  .timer(5, TimeUnit.SECONDS, AndroidSchedulers.mainThread())
+  .subscribe(this::getTransactionDetails);
+```
