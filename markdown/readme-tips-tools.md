@@ -37,11 +37,12 @@ project. Here some tools you might find useful:
 - [badgerbadgerbadger](https://github.com/badges/badgerbadgerbadger);
 - [License badges](https://gist.github.com/lukas-h/2a5d00690736b4c3a7ba);
 
-## Examples
+## Useful links
 > Some examples of nice readme files.
 
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts/blob/master/readme.md)
 - [Color-scripts](https://github.com/stark/Color-Scripts)
+- [awesome-readme](https://github.com/matiassingers/awesome-readme);
 
 ## References
 
@@ -50,3 +51,4 @@ project. Here some tools you might find useful:
 - [contributing-template](https://github.com/nayafia/contributing-template);
 - [github-issue-templates](https://github.com/stevemao/github-issue-templates);
 - [contributing.md](https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62);
+- [readme-template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2);
