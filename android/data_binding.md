@@ -22,6 +22,27 @@ android {
 
 ## Layout and Binding Expressions
 
+The Data Binding library generates all the code necessary to bind your data
+objects to the layout. The following is an example of a layout that will be
+processed by the library:
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- This tag tells the library to process this layout -->
+<layout>
+  <data>
+    <!-- Variables -->
+    <variable name="user" type="com.example.User" />
+  </data>
+
+  <ViewGroup>
+  </ViewGroup>
+</layout>
+```
+
+Inside the `data` section are defined the variables that might be used in the
+expression within the layout.
+
 ## Binding Adapters
 
 ### Dynamic Binding Adapters
