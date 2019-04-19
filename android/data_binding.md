@@ -35,13 +35,16 @@ processed by the library:
     <variable name="user" type="com.example.User" />
   </data>
 
-  <ViewGroup>
-  </ViewGroup>
+  <FrameLayout>
+    <!-- An example of expression -->
+    <TextView android:text="@{user.firstName}" />
+  </FrameLayout>
 </layout>
 ```
 
-Inside the `data` section are defined the variables that might be used in the
-expression within the layout.
+Inside the `data` section are defined the **variables** that might be used in
+the expression within the layout. The **expressions** within the layout are
+written in the attribute values using the`@{}` syntax.
 
 ## Binding Adapters
 
