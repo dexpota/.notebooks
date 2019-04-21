@@ -3,6 +3,7 @@
 
 [3]: https://github.com/JetBrains/android/blob/40ee31fa0b3d6733aa364c6f1561354433f523e1/android/src/com/android/tools/idea/res/SampleDataResourceRepository.java
 [4]: https://github.com/JetBrains/android/blob/40ee31fa0b3d6733aa364c6f1561354433f523e1/android/src/com/android/tools/idea/res/SampleDataResourceItem.java
+[5]: https://github.com/JetBrains/android/blob/2af3571e22ba72b5d1a70493e023608fe80fc0f8/android/src/com/android/tools/idea/sampledata/datasource/LoremIpsumGenerator.java
 
 # Tools Attributes
 
