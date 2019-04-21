@@ -1,4 +1,8 @@
 [1]: https://developer.android.com/studio/write/tool-attributes
+[2]: https://github.com/JetBrains/android
+
+[3]: https://github.com/JetBrains/android/blob/40ee31fa0b3d6733aa364c6f1561354433f523e1/android/src/com/android/tools/idea/res/SampleDataResourceRepository.java
+[4]: https://github.com/JetBrains/android/blob/40ee31fa0b3d6733aa364c6f1561354433f523e1/android/src/com/android/tools/idea/res/SampleDataResourceItem.java
 
 # Tools Attributes
 
@@ -62,6 +66,16 @@ attributes are defined inside the `tools` package and can be referenced with
 | `@tools:sample/date/hhmmss`        |                                                                                                                            |
 | `@tools:sample/avatars`            | Vector drawables that you can use as profile avatars.                                                                      |
 | `@tools:sample/backgrounds/scenic` | Images that you can use as backgrounds.                                                                                    |
+
+### Custom sample data
+
+### Source code
+
+You can have a look at the code used to provide the sample data [here][3]. The
+class [SampleDataRepository][3] defines the set of predefined sources and allows
+to define new data sources. A sample data source is defined by an instance of
+[SampleDataResourceItem][4]. [LoremImpsumGenerator][5] is an example of data
+generator used by SampleDataResourceItem.
 
 # References
 
