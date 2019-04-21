@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" />
-
 # 📓 .notebooks
 
 > A collection of notes about computer-science topics to help you learning and
@@ -7,7 +5,7 @@
 
 ## Topics
 
-<i class="devicon-android-plain colored"></i>
+<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/android.svg" />  <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg" /> <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/vagrant.svg" />
 
 ## List of notebooks
 
