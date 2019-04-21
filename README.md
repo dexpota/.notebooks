@@ -1,4 +1,4 @@
-# .notebooks
+# .notebooks 📓
 
 > A collection of notes about computer-science topics to help you learning and
 > to be used for future references.
