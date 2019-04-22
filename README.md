@@ -10,7 +10,7 @@
 
 ## Topics
 
-<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/android.svg" />  <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg" /> <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/vagrant.svg" />
+<img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/android.svg" />  <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/python.svg" /> <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/vagrant.svg" /> <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/git.svg" /> <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/rust.svg" /> <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/vim.svg" /> <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/markdown.svg" /> <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/java.svg" /> <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/kotlin.svg" /> <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/typescript.svg" /> <img height="32" width="32" src="https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/cplusplus.svg" />
 
 ## List of notebooks
 
