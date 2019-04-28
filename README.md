@@ -8,6 +8,8 @@
 
 [![license badge][license]][1]
 
+![notebooks-header](.github/notebooks.jpg)
+
 This repository is to be considered a work in progress, I will gradually update
 these notes in my spare time. If you want to contribute to this project you are
 welcome.
