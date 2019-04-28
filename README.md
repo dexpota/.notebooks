@@ -1,12 +1,12 @@
-[1]: http://creativecommons.org/licenses/by-nc-sa/4.0/
-[license]: https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png
+[license]: http://creativecommons.org/licenses/by-nc-sa/4.0/
+[license-badge]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=for-the-badge
 
 # 📓 .notebooks 🚧
 
 > A collection of notes about computer-science topics to help you learning and
 > to be used for future references.
 
-[![license badge][license]][1]
+[![license badge][license-badge]][license]
 
 ![notebooks-header](.github/notebooks.jpg)
 
@@ -28,4 +28,4 @@ welcome.
 
 ## License
 
-This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][1].
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License][license].
