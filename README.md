@@ -25,6 +25,7 @@ welcome.
 - [Tips and tools to write your readme file](./markdown/readme-tips-tools.md)
 - [Rust](./programming_languages/rust.md)
 - [Vagrant](./devops/vagrant.md)
+- [RxJava2](./rxjava2/readme.md)
 
 ## License
 
