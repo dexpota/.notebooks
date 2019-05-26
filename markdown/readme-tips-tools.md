@@ -52,6 +52,7 @@ project. Here some tools you might find useful:
 - [github-issue-templates](https://github.com/stevemao/github-issue-templates);
 - [contributing.md](https://gist.github.com/briandk/3d2e8b3ec8daf5a27a62);
 - [readme-template](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2);
+- [awesome-github-templates](https://github.com/devspace/awesome-github-templates): issue and pr templates;
 
 ### Badges
 
