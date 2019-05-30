@@ -16,3 +16,18 @@ No toolchains found in the NDK toolchains folder for ABI with prefix: mips64el-l
   greater than 17, then you have to update your android gradle plugin to a
 version greater than 3.1.2
 ([stackoverflow.com](https://stackoverflow.com/a/52402004/9942979));
+
+## Data Binding
+
+### Error message
+
+```
+Unresolved reference: BR
+```
+
+#### Solutions
+
+- **Add** this line to your gradle build configuration;
+  ```
+  apply plugin: 'kotlin-kapt'
+  ```
