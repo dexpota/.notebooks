@@ -14,3 +14,22 @@ between these actions.
 
 Ansible as a tool for **provisioning** new servers can interact with different cloud providers (EC2, Azure, Digital Ocean,
 Google Compute Engine, Linode, and ackspace) to spin up new virtual machines.
+
+## Installation
+
+You can install Ansible using your system package manager, or by using pip:
+- on ubuntu using apt: `sudo apt install ansible`;
+- on osx using homebrew: `brew install ansible`;
+- using pip: `sudo pip install ansible`;
+
+### Ansible
+
+You need to have SSH access and root privileges on a Linux server to follow along with the examples. You can use Vagrant to
+boot a Linux virtual machine inside your laptop, and you can use that as a test server.
+
+```bash
+mkdir playbooks
+cd playbooks
+vagrant init ubuntu/trusty64
+vagrant up
+```
