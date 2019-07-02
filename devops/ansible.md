@@ -18,9 +18,21 @@ Google Compute Engine, Linode, and ackspace) to spin up new virtual machines.
 ## Installation
 
 You can install Ansible using your system package manager, or by using pip:
-- on ubuntu using apt: `sudo apt install ansible`;
-- on osx using homebrew: `brew install ansible`;
-- using pip: `sudo pip install ansible`;
+
+```
+# Ubuntu
+sudo apt install ansible
+```
+
+```
+# OSX
+brew install ansible
+```
+
+```
+# pip
+sudo pip install ansible
+```
 
 ### Ansible
 
