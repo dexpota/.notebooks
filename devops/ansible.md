@@ -34,7 +34,9 @@ brew install ansible
 sudo pip install ansible
 ```
 
-### Ansible
+## Getting Started
+
+### Vagrant
 
 You need to have SSH access and root privileges on a Linux server to follow along with the examples. You can use Vagrant to
 boot a Linux virtual machine inside your laptop, and you can use that as a test server.
@@ -44,4 +46,12 @@ mkdir playbooks
 cd playbooks
 vagrant init ubuntu/trusty64
 vagrant up
+```
+
+Ansible needs to connect to the virtual machine by using the regular SSH client. Tell Vagrant to output the SSH connection
+details by typing the following command: `vagran ssh-config`. Confirm that you can start an SSH session from the command line
+by using the information from the previous command.
+
+```bash
+ssh vagrant@127.0.0.1 -p 2222 -i /path/to/private/key/used/by/vagrant
 ```
