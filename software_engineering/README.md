@@ -1,3 +1,6 @@
+[]: https://en.wikipedia.org/wiki/Software_design_pattern
+[]: https://en.wikipedia.org/wiki/Category:Programming_principles
+
 # Design Patterns
 
 * [Behavioral Patterns](gof_patterns/behavioral_patterns.md#behavioral-patterns)
