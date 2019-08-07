@@ -131,3 +131,7 @@ git submodule update --remote
 - The working directory is a single checkout of one version of the project, placed on disk to use or modify;
 
 - The staging area, or index, is a file that stores information about what will go into your next commit
+
+# do and donts
+
+Never rebase a commited branch, this is like rewriting history.
