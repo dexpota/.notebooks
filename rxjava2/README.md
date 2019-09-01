@@ -4,3 +4,4 @@
 - [Error Handling](./errors.md);
 - [Subjects](./subjects.md);
 - [Recipies](./recipies.md);
+- [Tips](./tips.md);
