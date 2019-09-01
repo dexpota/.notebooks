@@ -1,6 +1,6 @@
 # RxJava2
 
-- [./combining.md](Combining Observables);
-- [./errors.md](Error handling);
-- [./subjects.md](Subjects);
-- [./recipies.md](Recipies);
+- [Combining Observables](./combining.md);
+- [Error Handling](./errors.md);
+- [Subjects](./subjects.md);
+- [Recipies](./recipies.md);
