@@ -34,7 +34,21 @@ There are two types of files inside the working directory: *tracked* (known by g
 - pull data to the local repository and merge with the working directory;
     - if you want you can merge without bubble by using git pull --rebase, the local changes will be replayed on top
 
-## Cookbook
+## Recipies
+
+- Restore a single file from stash:
+  - this will overwrite the file
+  ```bash
+  git checkout stash@{0} -- <filename>
+  ```
+  - an alternative is the following command:
+  ```bash
+  git diff stash@{0}..HEAD -- <filename> | git apply
+  ```
+  - to get a list of stashed file changes use this command:
+  ```bash
+  git stash show 1 --name-only
+  ```
 
 - adding files:
     - `git add -N` express the intention to add file;
