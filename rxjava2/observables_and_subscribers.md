@@ -1,3 +1,5 @@
+[create-observable]: https://raw.githubusercontent.com/dexpota/rxjava2-playground/master/src/main/kotlin/me/destro/playground/rxjava2/observables/creation/Create.kt
+
 # Observables and Subscribers
 
 ## Observer and Observable
@@ -44,3 +46,4 @@ fun main() {
 }
 ```
 <!-- AUTO-GENERATED-CONTENT:END -->
+[<sub><sup>Original source code</sup></sub>][create-observable]
