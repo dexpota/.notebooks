@@ -4,7 +4,7 @@
 > in a virtual machine.
 
 Vagrant is a Swiss Army knife for development environments. It does everything
-you need to create and manage development environments inside virtual machines. 
+you need to create and manage development environments inside virtual machines.
 It helps enforce good practices by encouraging the use of automation and an
 environment that more closely resembles production.
 

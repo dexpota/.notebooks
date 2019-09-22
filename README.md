@@ -20,13 +20,23 @@ welcome.
 
 ## Notebooks
 
+### Programming
+
 - [Android](./android/README.md);
-- [OAuth2](./oauth2/oauth2.md)
-- [Tips and tools to write your readme file](./markdown/readme-tips-tools.md)
 - [Rust](./programming_languages/rust.md)
-- [Vagrant](./devops/vagrant.md)
 - [RxJava2](./rxjava2/README.md) is a Java implementation of the ReactiveX API
   for asynchronous programming with observables streams;
+
+### Devops
+
+- [vagrant](./devops/vagrant/README.md)
+- [git](./devops/git/README.md)
+- [ansible](./devops/ansible/README.md)
+
+### Other
+
+- [OAuth2](./oauth2/oauth2.md)
+- [Tips and tools to write your readme file](./markdown/readme-tips-tools.md)
 
 ## License
 

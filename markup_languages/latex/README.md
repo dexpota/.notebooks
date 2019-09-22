@@ -15,7 +15,7 @@ the save process.
 
 - `<name>`: the name of the command you want to create, only alpha characters;
 - `<definition>`: the definition of the command;
-- `<num>`: optional value that specifies the number of arguments the 
+- `<num>`: optional value that specifies the number of arguments the
   command takes.
 
 ```latex
@@ -50,7 +50,7 @@ paragraphs), at the beginning of a line, and after a command name.
 
 The principal technique for suppressing spaces is the use of % characters:
 everything after a % is ignored, even the end of line itself. The secondary
-technique is to ensure that the end of line is preceded by a command name 
+technique is to ensure that the end of line is preceded by a command name
 
 
 # References
@@ -59,4 +59,4 @@ technique is to ensure that the end of line is preceded by a command name
   [online] Available at: https://en.wikibooks.org/wiki/LaTeX [Accessed 24 Aug.
 2018].
 - The TeX FAQ. (2018). Spaces in macros. [online] Available at:
-  https://texfaq.org/FAQ-spinmacro [Accessed 24 Aug. 2018]. 
+  https://texfaq.org/FAQ-spinmacro [Accessed 24 Aug. 2018].
