@@ -1,7 +1,7 @@
 [license]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [license-badge]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=for-the-badge
 
-# 📓 .notebooks 🚧
+# 📓 notebooks 🚧
 
 > A collection of notes about computer-science topics to help you learning and
 > to be used for future references.
