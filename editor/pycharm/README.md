@@ -9,7 +9,7 @@
 	- `(Foo, Bar)` a tuple of Foo and Bar class;
 	- `list[Foo]` a list of Foo objects;
 	- `dict[Foo, Bar]` a dictionary from Foo to Bar;
-	- `(Foo) -> Bar` a function taking a Foo and returning a Bar;	
+	- `(Foo) -> Bar` a function taking a Foo and returning a Bar;
 
 - Syntax to specify variables' type inside comments;
 	- for a local variable write `""":type : <type>"""` after its use;

@@ -6,4 +6,3 @@
 ## Facade
 ## Flyweight
 ## Proxy
-

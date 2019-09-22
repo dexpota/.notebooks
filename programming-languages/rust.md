@@ -19,7 +19,7 @@ other rules:
 
 In Rust, operations like assigning a value to a variable, passing it to a
 function, or returning it from a function **copy** or **move** the value,
-depending on the data type. 
+depending on the data type.
 
 #### Moving
 
@@ -57,7 +57,7 @@ if c {
 }
 
 h(x) // Error! x is considered uninitialized.
-``` 
+```
 
 ```rust
 let x = vec![10, 20, 30];
@@ -130,5 +130,3 @@ that value at the same time.
 - Doc.rust-lang.org. (2018). The Rust Programming Language. [online] Available
   at: https://doc.rust-lang.org/book/2018-edition [Accessed 22 Aug. 2018].
 ok at a different kind of reference: slices.
-
-

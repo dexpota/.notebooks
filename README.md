@@ -23,9 +23,13 @@ welcome.
 ### Programming
 
 - [Android](./android/README.md);
-- [Rust](./programming_languages/rust.md)
-- [RxJava2](./rxjava2/README.md) is a Java implementation of the ReactiveX API
+- [Rust](./programming-languages/rust.md)
+- [RxJava2](./frameworks/rxjava2/README.md) is a Java implementation of the ReactiveX API
   for asynchronous programming with observables streams;
+
+### Computer Graphics
+
+- [OpenGL](./computer-graphics/opengl/README.md);
 
 ### Devops
 
@@ -36,7 +40,7 @@ welcome.
 ### Other
 
 - [OAuth2](./oauth2/oauth2.md)
-- [Tips and tools to write your readme file](./markdown/readme-tips-tools.md)
+- [Tips and tools to write your readme file](./markup-languages/markdown/readme-tips-tools.md)
 
 ## License
 

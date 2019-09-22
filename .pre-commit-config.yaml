@@ -8,6 +8,12 @@ repos:
     -   id: end-of-file-fixer
 - repo: local
   hooks:
+    - id: check-links
+      name: Check Links
+      description: Check links inside markdown files
+      language: script
+      types: ["markdown"]
+      entry: ./.hooks/check-links.sh
     - id: markdown-magic
       name: Markdown Magic
       description: Execute Markdown Magic on markdown files

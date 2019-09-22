@@ -109,14 +109,14 @@ The convolution and correlation between two matrices is computed for each positi
 
 
 ```
-[[1, 2, 0, 0], 
+[[1, 2, 0, 0],
  [5, 3, 0, 4],
  [0, 0, 0, 7],
  [9, 3, 0, 0]]
 ```
 
 ```
-[[1, 1, 1], 
+[[1, 1, 1],
  [1, 1, 0],
  [1, 0, 0]]
 ```
