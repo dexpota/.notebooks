@@ -1,7 +1,7 @@
 [license]: http://creativecommons.org/licenses/by-nc-sa/4.0/
 [license-badge]: https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg?style=for-the-badge
 
-# 📓 notebooks 🚧
+# 📓 notebooks
 
 > A collection of notes about computer-science topics to help you learning and
 > to be used for future references.
@@ -25,7 +25,8 @@ welcome.
 - [Tips and tools to write your readme file](./markdown/readme-tips-tools.md)
 - [Rust](./programming_languages/rust.md)
 - [Vagrant](./devops/vagrant.md)
-- [RxJava2](./rxjava2/README.md)
+- [RxJava2](./rxjava2/README.md) is a Java implementation of the ReactiveX API
+  for asynchronous programming with observables streams;
 
 ## License
 
