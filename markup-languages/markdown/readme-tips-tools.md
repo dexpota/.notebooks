@@ -2,6 +2,7 @@
 
 > [Reference](https://help.github.com/articles/about-readmes/)
 > [Reference](https://medium.freecodecamp.org/how-to-get-up-to-3500-github-stars-in-one-week-339102b62a8f)
+> [Reference](https://dev.to/scottydocs/how-to-write-a-kickass-readme-5af9)
 
 ![Readme structure](./readme-structure.png)
 
