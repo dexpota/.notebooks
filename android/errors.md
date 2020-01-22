@@ -31,3 +31,33 @@ Unresolved reference: BR
   ```
   apply plugin: 'kotlin-kapt'
   ```
+
+## com.android.test projects and multiple flavours
+
+### Error message
+
+```
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Could not determine the dependencies of task ':testing:compileDebugJavaWithJavac'.
+> Could not resolve all task dependencies for configuration ':testing:debugCompileClasspath'.
+   > Could not resolve project :app.
+     Required by:
+         project :testing
+      > Cannot choose between the following variants of project :app:
+        - ...
+        - ...
+        - ...
+        - ...
+```
+
+#### Solutions
+
+Replicate flavours inside second testing project.
+
+#### Reference
+
+See https://developer.android.com/studio/test#use_separate_test_modules_for_instrumented_tests
+
+> If your app module defines multiple product flavors, you can recreate those flavors in your test module, and, using variant aware dependency management, the test module attempts to test the matching flavor in the target module.
